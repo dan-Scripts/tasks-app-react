@@ -1,0 +1,133 @@
+/* Aside search form styles --- Effect every form */
+.src-form {
+  height: 45px;
+  position: relative;
+  overflow: hidden;
+}
+
+.src-form svg {
+  fill: transparent;
+  stroke: #ccc;
+  stroke-width: 10px;
+  max-width: 20px;
+  height: 100%;
+  cursor: pointer;
+}
+
+.src-form input,
+.add-project input,
+.add-form input {
+  height: 100%;
+  width: 100%;
+  border: 1px solid;
+  outline: none;
+  font-size: 1.2rem;
+  letter-spacing: 1.3px;
+  padding: 0 44px 0 12px;
+  border-radius: 25px;
+  background: var(--light-bg-cl );
+}
+
+.src-form label {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  z-index: 100;
+}
+
+
+.add-project {
+  width: 100%;
+  background: #cecece;
+  border-radius: 3px;
+  padding: 15px 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.add-project span,
+.add-form span {
+  transform: rotate(45deg);
+  font-size: 1.5rem;
+  color: #293644;
+  padding: 3px;
+  position: absolute;
+  right: -3px;
+  top: -10px;
+  cursor: pointer;
+  opacity: .7;
+}
+
+.add-project input {
+  font-size: .9rem;
+  padding: 5px 3px;
+  border-radius: 3px;
+}
+
+/* add-form --add new todo form */
+.add-form-wrapper {
+  position: absolute;
+  background: radial-gradient(#faa, transparent);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  backdrop-filter: blur(2px);
+}
+
+.add-form {
+  width: 450px;
+  padding: 1rem;
+  background: #858f99;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+  border-radius: 3px;
+  backdrop-filter: blur(150px);
+}
+
+.add-form input,
+.add-form textarea {
+  border-radius: 3px;
+  padding: 3px;
+  height: unset;
+  outline: none;
+}
+
+.add-form textarea {
+  resize: none;
+  padding: 5px;
+  color: #fff;
+}
+
+.add-form select {
+  background: #c1c1c1;
+  min-width: 120px;
+  height: 100%;
+  margin-left: 15px;
+  text-align: center;
+  outline: none;
+  border: 1px solid;
+  border-radius: 3px;
+}
+
+.add-form .options {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0 -5px;
+}
+
+.add-form .options>* {
+  flex: 1;
+}
+
+.add-form .options label {
+  font-size: .9rem;
+}

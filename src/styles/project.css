@@ -1,0 +1,42 @@
+.project {
+    height: 65px;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid;
+    border-left: 7px solid;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.project h3{
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+.project p {
+    font-size: 14px;
+    letter-spacing: .3px;
+    font-weight: 300;
+}
+
+.project span {
+    font-weight: 500;
+}
+
+.project .expand-icon {
+    height: 100%;
+    transform: rotate(-90deg);
+    transition: transform .2s ease;
+}
+
+/* remove first project for --it's replaced by the last one */
+.project.add {
+    margin-top: 35px;
+}
+
+.rotate {
+    transform: rotate(0deg) !important;
+}
